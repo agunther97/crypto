@@ -23,7 +23,9 @@ def extended_euclidean(a,b):
     r = b_0
     return (r,s,t)
 
-# r = gcd(a,b) and sa+tb = r
-print(extended_euclidean(17, 101)[1]%101) # s mod b = a^-1 mod b
-print(extended_euclidean(357, 1234)[1]%1234)
-print(extended_euclidean(3125, 9987)[1]%9987)
+print("17^-1 mod 101:")
+print(int(extended_euclidean(17, 101)[1]%101)) # s mod b = a^-1 mod b
+print("357^-1 mod 1234:")
+print(int(extended_euclidean(357, 1234)[1]%1234))
+print("3125^-1 mod 9987:")
+print(int(extended_euclidean(3125, 9987)[1]%9987))
